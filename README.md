@@ -36,7 +36,7 @@ Vous pouvez vous connecter avec les identifiants suivants pour tester l'applicat
     cp .env.example .env
     php artisan key:generate
    
-4. **Configurer la base de données Modifier les variables DB_* dans .env selon votre configuration locale.**
+4. **Configurer la base de données Modifier les variables DB_ dans .env selon votre configuration locale.**
 
 5. **Migrer les tables**
    ```bash
