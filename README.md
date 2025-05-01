@@ -12,13 +12,6 @@ Ce projet est une application CRUD de gestion de tâches développée avec **Lar
 
 ---
 
-## 🧪 Compte de test
-
-Vous pouvez vous connecter avec les identifiants suivants pour tester l'application :
-
-- **Email** : `taskmanager-admin@gmail.com`  
-- **Mot de passe** : `Heaving2-Shrunk4-Flanking6-Prelaw3`
-
 ## 🛠️ Installation
 
 1. **Cloner le dépôt**
