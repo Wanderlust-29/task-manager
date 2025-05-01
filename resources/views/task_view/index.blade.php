@@ -1,9 +1,9 @@
 @extends('task_view.app')
 @section('content')
     <div class="container mt-4">
-        <div class="d-flex justify-content-between align-items-center mb-4">
-            <h2 class="text-primary">Liste des Tâches</h2>
-            <div>
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4">
+            <h2 class="text-primary mb-3 mb-md-0">Liste des Tâches</h2>
+            <div class="d-flex gap-2">
                 <a class="btn btn-primary" href="{{ route('task.create') }}">Ajouter une tâche</a>
                 <a class="btn btn-danger" href=""
                     onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
@@ -44,14 +44,17 @@
                                     {{ $task->status ? 'Terminée' : 'En cours' }}
                                 </span>
                             </td>
-                            <td>
-                                <a href="{{ route('task.edit', $task->id) }}" class="btn btn-warning btn-sm">Modifier</a>
-                                <form action="{{ route('task.destroy', $task->id) }}" method="post"
-                                    style="display:inline;">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button type="submit" class="btn btn-danger btn-sm">Supprimer</button>
-                                </form>
+                            <td class="text-center">
+                                <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-2">
+                                    <a href="{{ route('task.edit', $task->id) }}"
+                                        class="btn btn-warning btn-sm">Modifier</a>
+                                    <form action="{{ route('task.destroy', $task->id) }}" method="post"
+                                        style="display:inline;">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger btn-sm">Supprimer</button>
+                                    </form>
+                                </div>
                             </td>
                         </tr>
                     @endforeach
