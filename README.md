@@ -6,7 +6,7 @@ Ce projet est une application CRUD de gestion de tâches développée avec **Lar
 
 ## 🚀 Fonctionnalités
 
-- Authentification (inscription, connexion, déconnexion)
+- Authentification (connexion, déconnexion)
 - Gestion complète des tâches (CRUD)
 - Protection des routes avec middleware `auth`
 
